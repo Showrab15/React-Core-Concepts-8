@@ -1,0 +1,32 @@
+1. What is virtual DOM?
+i.Lightweight copy of a DOM object
+Has properties the same as real DOM object
+Make changes in the DOM with the help of the DIFF algorithm
+
+It's like instead of moving actual rooms in a house , you edit the blueprint
+
+2. What is the difference between real DOM and virtual DOM?
+Difference between virtual and real DOM
+The differences between virtual and real DOM are summarized in the table below:
+
+Real DOM
+i.It is an abstraction of a page's HTML.
+ii.It can manipulate on-screen elements.
+iii. Any change updates the entire DOM tree.
+iv.Updating is slow and inefficient.
+
+Virtual DOM
+i.It is an abstraction of an HTML DOM.
+ii.It cannot manipulate on-screen elements.
+iii.Any change only updates the relevant node in the tree.
+iv.Updating is fast and efficient.
+
+LEARN MORE ABOUT VIRTUAL DOM VS REAL DOM: https://www.educative.io/answers/what-is-the-difference-between-virtual-and-real-dom-react
+
+
+
+
+
+
+
+

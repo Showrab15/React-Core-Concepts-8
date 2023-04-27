@@ -1,0 +1,11 @@
+1. Describe the React Component Life-Cycle?
+
+In ReactJS, every component creation process involves various lifecycle methods. These lifecycle methods are termed as component's lifecycle. These lifecycle methods are not very complicated and called at various points during a component's life. The lifecycle of the component is divided into four phases. They are:
+
+i.Initial Phase
+ii.Mounting Phase
+iii.Updating Phase
+ivUnmounting Phase
+
+ LEARN MORE ABOUT REACT COMPONENT LIFE CYCLE : https://www.javatpoint.com/react-component-life-cycle
+ https://youtu.be/CzyspyBe7rk

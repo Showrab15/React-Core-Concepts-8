@@ -1,0 +1,26 @@
+1.  what is react?
+i.ReactJs is a javascript library for building user interfaces
+
+ii.ReactJs is declarative, efficient and flexile
+
+iii.It i is fast component based
+
+iv.It was initially developed and maintained by facebook
+
+* ReactJs breaks web elements down into reusable components making it easy to manage complex web interfaces
+* rect's virtual DOM is a javascript representation  of the actual DOM . When updates are made react compares the current DOM  to the virtual DOM only updates the differences between the two
+
+2. History of React
+
+2010---> The first sign of React
+ facebook introduced xhp into its php stack and open sourced it. Xhp allowed creating composite components . they introduced this syntax later in React.
+
+ 2011--> An early prototype of React 
+ jordan walk a software engineer at facebook, created FaxJs, the early prototype of React-- shipped a search element on facebook
+
+ 2012--> The year of the big launch
+ i.jordan walk introduced react . React gets open sourcedReact(by facebook) is available on JSFiddle
+ ii.Open sourced React in the : JS conf
+ iii.Pet Hunt(name): rethink best practices
+
+ LEARN MORE ABOUT React,  React vs Vue js vs angular : milestone 8 : modeul 49-6 

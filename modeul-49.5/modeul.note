@@ -1,0 +1,12 @@
+1. What is modeul in react js?
+A module encapsulates a set of related functions and components semantically related with its own functional responsibility. They have all the assets they need to work on their own and can be tested independently of the rest of the application.
+
+Note :
+if you saw ./ before file name thats mean this file is import from the same folder.
+if you don't see ./ thats mean your file is import form node modeuls of react
+
+
+
+
+event handler with parameter:
+if you need any event handler with parameter , then you need to create a arrow function on the onClick then call the event handler function with the parameter

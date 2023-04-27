@@ -1,0 +1,18 @@
+react hooks 
+
+hooks were first introduced in react 16.8 they let use more reacts features like managing our components state, or performing an after effect when certain changes occur states without writing a class.
+
+
+what is state in reacts?
+
+a built in react object 
+used to contain data about the component 
+changeable over time 
+react component rendering and states are dependent
+
+five use cases of useState 
+1. state management
+2. conditional rendering
+3. toggle flags (true/ false)
+3. counter 
+5. store API data in state

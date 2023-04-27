@@ -1,0 +1,33 @@
+1. What are component in react?
+
+Building blocks of the user interface
+
+Each component exists in the same space but works independently
+
+All of the components are being merged in a parent component (the final UI)
+
+Split s UI into independent and reusable pieces
+
+Accepts input called  called props(optional) and returns react element
+
+Re-usable having their own structure  and methods
+
+2. How many types of component in react ?
+There are 4 types of component .
+1. Similar in look, different in data
+2. Container component.
+3.  No pattern , but breakdown for working purpose
+4. Stand-alone component
+
+3. Whats are the advantages of the components?
+Code re-usability
+Fast development
+Design consistency
+Maintainability (update jus one component & get result in all spaces related to this component)
+
+4. What are the single page applications?
+i. only one web page, and each time something happens, only part of the pages is reloaded while the rest of the HTML remains unchanged.
+ii. All user interaction with this service is carried out, using one screen page.
+iii. Load all the necessary HTML, CSS and javascript in the initial page load , and then dynamically update their DOM and retrieve extra data based on user interactions.
+iv. Give the users the illusion that they are accessing different pages of paths.
+v. enables to combine a complex functionality of an MPA with a convenient navigation ( a hybrid approach).

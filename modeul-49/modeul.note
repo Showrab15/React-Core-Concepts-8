@@ -1,0 +1,195 @@
+1. what is npm?
+
+npm is a package manager for the JavaScript programming language maintained by npm, Inc. npm is the default package manager for the JavaScript runtime environment Node.js. It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+2. Writing Markup with JSX
+JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file. Although there are other ways to write components, most React developers prefer the conciseness of JSX, and most code bases use it.
+
+3. JSX: Putting markup into JavaScript 
+The Web has been built on HTML, CSS, and JavaScript. For many years, web developers kept content in HTML, design in CSS, and logic in JavaScript—often in separate files! Content was marked up inside HTML while the page’s logic lived separately in JavaScript: But as the Web became more interactive, logic increasingly determined content. JavaScript was in charge of the HTML! This is why in React, rendering logic and markup live together in the same place—components.
+
+4. Why can't browsers read JSX?
+i.browser can only read javascript objects
+ii.JSX is not a regular javascript objects
+ii.To enable a browser to read JSX  we need to transform JSX  file into a javascript object using JSX transpiler like Babel and then pass it to the browser
+
+***Note***
+JSX and React are two separate things. They’re often used together, but you can use them independently of each other. JSX is a syntax extension, while React is a JavaScript library.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+4.The Rules of JSX 
+i. Return a single root element 
+To return multiple elements from a component, wrap them with a single parent tag.
+
+For example, 
+you can use a <div> 
+If you don’t want to add an extra <div> to your markup, you can write <> and </> instead This empty tag is called a Fragment. Fragments let you group things without leaving any trace in the browser HTML tree.
+
+ii. Close all the tags 
+JSX requires tags to be explicitly closed: self-closing tags like <img> must become <img />, and wrapping tags like <li>oranges must be written as <li>oranges</li>.
+
+iii.camelCase all most of the things! 
+JSX turns into JavaScript and attributes written in JSX become keys of JavaScript objects. In your own components, you will often want to read those attributes into variables. But JavaScript has limitations on variable names. For example, their names can’t contain dashes or be reserved words like class.
+
+This is why, in React, many HTML and SVG attributes are written in camelCase. For example, instead of stroke-width you use strokeWidth. Since class is a reserved word, in React you write className instead, named after the corresponding DOM property
+
+------------------------------Recap-----------------------------
+Now you know why JSX exists and how to use it in components:
+
+React components group rendering logic together with markup because they are related.
+JSX is similar to HTML, with a few differences. You can use a converter if you need to.
+Error messages will often point you in the right direction to fixing your markup.
+
+LEARN MORE ABOUT JSX : https://react.dev/learn/writing-markup-with-jsx
+
+--------------------------------------------------------------------------------------------------------------------------
+
+5. Where to use curly braces {}?
+
+You can only use curly braces in two ways inside JSX:
+
+As text directly inside a JSX tag: <h1>{name}'s To Do List</h1> works, but <{tag}>Gregorio Y. Zara's To Do List</{tag}> will not.
+As attributes immediately following the = sign: src={avatar} will read the avatar variable, but src="{avatar}" will pass the string "{avatar}".
+
+Using “double curlies”: CSS and other objects in JSX 
+In addition to strings, numbers, and other JavaScript expressions, you can even pass objects in JSX. Objects are also denoted with curly braces, like { name: "Hedy Lamarr", inventions: 5 }. Therefore, to pass a JS object in JSX, you must wrap the object in another pair of curly braces: person={{ name: "Hedy Lamarr", inventions: 5 }}.
+
+You may see this with inline CSS styles in JSX. React does not require you to use inline styles (CSS classes work great for most cases). But when you need an inline style, you pass an object to the style attribute
+
+
+---------------------------Recap-------------------------
+Now you know almost everything about JSX:
+
+JSX attributes inside quotes are passed as strings.
+Curly braces let you bring JavaScript logic and variables into your markup.
+
+They work inside the JSX tag content or immediately after = in attributes.
+
+{{ and }} is not special syntax: it’s a JavaScript object tucked inside JSX curly braces.
+
+LEARN MORE ABOUT CURLIES : https://react.dev/learn/javascript-in-jsx-with-curly-braces
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+6.what is props ?
+
+Passing Props to a Component : We use props to pass data from one component to another (from a parent component to a child components)
+React components use props to communicate with each other. Every parent component can pass some information to its child components by giving them props. Props might remind you of HTML attributes, but you can pass any JavaScript value through them, including objects, arrays, and functions.
+
+i.To pass props, add them to the JSX, just like you would with HTML attributes.
+
+ii.To read props, use the function Avatar({ person, size }) destructuring syntax.
+
+iii.You can specify a default value like size = 100, which is used for missing and undefined props.
+
+iv. You can forward all props with <Avatar {...props} /> JSX spread syntax, but don’t overuse it!
+
+v. Nested JSX like <Card><Avatar /></Card> will appear as Card component’s children prop.
+
+vi. Props are read-only snapshots in time: every render receives a new version of props.
+
+vii. You can’t change props. When you need interactivity, you’ll need to set state.
+
+viii. props are uniderectional. Thats mean data of props will go up to down
+LEARN MORE ABOUT PROPS: https://react.dev/learn/passing-props-to-a-component
+
+--------------------------------------------------------------------------------------------------------------------------
+
+7. components in react js?
+
+Your First Component
+Components are one of the core concepts of React. They are the foundation upon which you build user interfaces (UI), which makes them the perfect place to start your React journey! Components are UI building block
+
+React lets you create components, reusable UI elements for your app.
+
+In a React app, every piece of UI is a component.
+
+React components are regular JavaScript functions except:
+
+Their names always begin with a capital letter.
+
+They return JSX markup.
+
+LEARN MORE ABOUT  COMPONENTS : https://react.dev/learn/your-first-component
+
+--------------------------------------------------------------------------------------------------------------------------
+
+8. what is useState?
+useState
+useState is a React Hook that lets you add a state variable to your component.
+
+const [state, setState] = useState(initialState)
+ for initial value:
+ i.  if we do any addition we will set initial value  0.
+ ii. if we do any multiplication we will set initial value 1.
+  iii. if we show any array we will set  empty array as a initial value .
+  iv. if we show any string we will set  empty string as a initial value .
+  iv. if we show any boolean we will set true or false as a initial value .
+Usage:
+Adding state to a component
+Updating state based on the previous state
+Updating objects and arrays in state
+Avoiding recreating the initial state
+Resetting state with a key
+Storing information from previous renders
+
+
+Parameters 
+initialState: The value you want the state to be initially. It can be a value of any type, but there is a special behavior for functions. This argument is ignored after the initial render.
+If you pass a function as initialState, it will be treated as an initializer function. It should be pure, should take no arguments, and should return a value of any type. React will call your initializer function when initializing the component, and store its return value as the initial state. See an example below.
+Returns 
+useState returns an array with exactly two values:
+
+The current state. During the first render, it will match the initialState you have passed.
+The set function that lets you update the state to a different value and trigger a re-render.
+Caveats 
+useState is a Hook, so you can only call it at the top level of your component or your own Hooks. You can’t call it inside loops or conditions. If you need that, extract a new component and move the state into it.
+In Strict Mode, React will call your initializer function twice in order to help you find accidental impurities. This is development-only behavior and does not affect production. If your initializer function is pure (as it should be), this should not affect the behavior. The result from one of the calls will be ignored.
+
+LEARN MORE ABOUT  useState : https://react.dev/reference/react/useState#adding-state-to-a-component
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+9. What is the difference between props and state?
+Difference between props and state:
+
+PROPS:
+i.The Data is passed from one component to another.
+ii.It is Immutable (cannot be modified).
+iii.Props can be used with state and functional components.
+iv. Props are read-only.
+STATE:
+i.The Data is passed within the component only.
+ii.It is Mutable ( can be modified).
+iii.State can be used only with the state components/class component (Before 16.0).
+iv.	State is both read and write.	
+	
+
+Points Discussed:
+Props are used to pass data from one component to another.
+The state is a local data storage that is local to the component only and cannot be passed to other components.
+The this.setState property is used to update the state values in the component.
+
+10. What is the Hooks?
+i.Hooks were added React in version 16.8
+ii.Hooks allows function components to have access to state and other React features
+iii.Hooks allows us to 'hook into React features such ad state and lifecycle methods
+
+11. UseState Hook 
+
+The useState Hook allows us to track state in a function componentTo yse the useState Hook You need to know a few things:
+i. you must import it from the React library.
+ii. You must invoke it inside a React component
+
+12. useEffect hook
+The useEFfect Hook allows you to perform side effects in your components . Some examples of side effects are: fetching data, updating the DOM, and timers
+
+To use useEffect hook, we need to a few tings:
+i. we import useEffect from React
+ii. We call it above the returned JSX in our component
+iii. we usually pass two arguments : a anonymous arrow function and a array

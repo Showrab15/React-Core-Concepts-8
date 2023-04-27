@@ -1,0 +1,162 @@
+1.1for install create-react-app:
+
+npx create-react-app folder name
+
+1.2For run react :
+
+npm start
+
+
+
+
+2.1 for install vite + react :
+
+npm create vite@latest folder name
+
+
+2.2. For run react + vite:
+
+npm run dev
+
+3. for deploy website  in create-react-app and vite + react both and deploy dist/built file:
+
+npm run build
+
+
+
+  4. if you clone any react repo you should give this command 
+  
+  npm install
+
+  5.1 install fontawesome icon in react:
+
+npm i --save @fortawesome/fontawesome-svg-core
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/react-fontawesome
+
+5.2 import fontawesome icon in react :
+
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+  5.3. for set fonawesome icon in JSX:
+
+  <FontAwesomeIcon icon={faCoffee} />
+
+
+  5.4. more for react font awesome icon : 
+  https://fontawesome.com/v5/docs/web/use-with/react
+
+
+
+6.1. install hero icon in your react projects by this command
+
+
+npm install @heroicons/react
+
+6.2 import hero icon on your react icon  projects by this style
+
+import { BeakerIcon } from '@heroicons/react/24/solid'
+
+6.3 set hero icon in your UI by this style 
+
+  <BeakerIcon className="h-6 w-6 text-blue-500" />
+
+
+
+7. install react toast alert in react by this command 
+
+npm install --save react-toastify
+
+
+
+
+8.how to download react bootstrap?
+
+#first step:
+install react bootstrap in your react project by this command
+
+npm install react-bootstrap bootstrap
+
+#second step 
+import bootstrap css file in your app.jsx or main.jsx file by this
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+#third step:
+
+if you need any specific component of react bootstrap then you need to imoort these component like this
+
+import { Button } from 'react-bootstrap';
+
+
+for more react bootstrap :
+https://react-bootstrap.github.io/getting-started/introduction
+
+
+
+9. install tailwind css in your react project 
+
+#first step :
+install this file in your project by these two command
+
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+
+#second step
+Add the paths to all of your template files in your tailwind.config.js file in the place of content.
+
+ content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+
+
+
+  #third step
+  put these three file in your index.css file
+
+ @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+for more react+ vite tailwind :
+https://tailwindcss.com/docs/guides/vite
+
+
+
+
+10. install recharts in react by this command
+
+npm install recharts
+
+
+#know more about by follow this 
+
+https://recharts.org/en-US/guide/installation
+
+
+
+
+
+11. How to install react rating 
+
+npm install --save react-rating
+
+set react rating in your project like this 
+
+ <Rating           
+readonly
+placeholderRating={rating-number}
+emptySymbol={<FaRegStar></FaRegStar>}
+placeholderSymbol={<FaStar></FaStar>}
+fullSymbol={<FaStar></FaStar>}>
+</Rating>
+
+###note: Rating must be imported and also icons
+
+  https://www.hostinger.com/tutorials/what-is-react#:~:text=ReactJS%20divides%20the%20UI%20into,inputs%20called%20properties%20or%20props.&text=It's%20possible%20to%20have%20as,necessary%20without%20cluttering%20your%20code.

@@ -1,0 +1,67 @@
+1. Javascript XML(JSX)
+JSX is a syntax extension for Javascript that lets you write JTML-like markup inside a javascript file
+
+rules you should know 
+i. To return multiple elements from a component, wrap them with a single parent tag like <div></div> or <></>
+
+ii. 'class  attribute becomes 'className'
+
+iii. Properties are written in camelCase
+onclick--> onClick, tabindex --> tabIndex
+
+iv. Tags must be closed : <h1></h1> , <img/>
+
+v. Function name should be start with capital letter
+
+2. component
+
+i. Components are the foundation upon which you build user interfaces(UI)
+
+ii. In a react app, every piece of UI is A component.
+
+iii. React Components are regular Javascript functions except;
+Their names begin with a capital letter.
+they return JSX  markup.
+
+3. how to build a component?
+define and export the function 
+add markup.For Example
+
+function LoadData(){
+return(
+    <div>
+    img src="https:img...jpg" alt="katherline jackson"/>
+    </div>
+);
+}
+
+
+4. Properties
+i. if i need to send data in components i will use props as function parameter.
+
+ii. react components use props to communicate with each other
+
+iii. Every parent component can pass some information to its child component by giving them props
+iv. You can pass any Javascript value through props, including objects array, and functions
+
+5. UseState
+useState is a react hook that lets you add a state variable to your component
+syntax:
+
+const [state, setState]= useState(initialState)
+
+6. UseState
+
+useState returns an array with exactly two values:
+
+The current state. during the first render, it will match the initialState you have passed
+
+the set function that lets you update the state to a different value and trigger a render
+
+
+7. UseEffect 
+
+the useEffect hook allows you to perform side effects in your components. One example of side  effects are : fetching data
+
+useEffect(callback, dependcies)
+
